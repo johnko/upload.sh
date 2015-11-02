@@ -4,8 +4,6 @@ Easy and fast file sharing from the command-line. This code contains the server 
 
 Transfer.sh support currently the s3 (Amazon S3) provider and local file system (local).
 
-[![Build Status](https://travis-ci.org/dutchcoders/transfer.sh.svg?branch=master)](https://travis-ci.org/dutchcoders/transfer.sh)
-
 ## Usage
 
 ```
@@ -39,9 +37,6 @@ $ transfer test.txt
 ## Development
 
 ```
-npm install
-bower install
-
 go get github.com/PuerkitoBio/ghost/handlers
 go get github.com/gorilla/mux
 go get github.com/dutchcoders/go-clamd
@@ -50,10 +45,7 @@ go get github.com/goamz/goamz/aws
 go get github.com/golang/gddo/httputil/header
 go get github.com/kennygrant/sanitize
 
-grunt serve
-grunt build
-
-go run transfersh-server/*.go -provider=local --port 8080 --temp=/tmp/ --basedir=/tmp/ 
+go run transfersh-server/*.go -provider=local --port 8080 --temp=/tmp/ --basedir=/tmp/
 ```
 
 ## Build
@@ -75,7 +67,7 @@ docker run --publish 8080:8080 --rm transfersh --provider local --basedir /tmp/
 
 Contributions are welcome.
 
-## Creators 
+## Creators
 
 **Remco Verhoef**
 - <https://twitter.com/remco_verhoef>
@@ -85,5 +77,5 @@ Contributions are welcome.
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2014 Remco Verhoef. 
-Code released under [the MIT license](LICENSE). 
+Code and documentation copyright 2011-2014 Remco Verhoef.
+Code released under [the MIT license](LICENSE).
